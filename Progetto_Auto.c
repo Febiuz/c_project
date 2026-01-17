@@ -307,7 +307,7 @@ void stampa_albero_inorder(Albero A){
     stampa_albero_inorder(A->sx);
 
     printf("Caratteristiche Auto -->\nMarca & Modello: %s %s,\n"
-           "Anno di immatricolazione: %d, \nCilindrata motore(cc): %d,\n"
+           "Anno di immatricolazione: %d, \nChilomeetri: %d, \nCilindrata motore(cc): %d,\n"
            "Potenza(CV): %d,\nPeso(KG): %.2f,\n"
            "Tipo di carburante: %s,\nTipo di cambio: %s,\nColore carrozzeria: %s, \nPrezzo: %.2f \n\n",
            A->automobile->marca,
