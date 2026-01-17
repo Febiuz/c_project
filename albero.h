@@ -1,22 +1,33 @@
 #ifndef ALBERO_H
 #define ALBERO_H
 
-#include "auto.h"  // include la definizione di Auto
+#include "auto.h"
 
 typedef struct nodo* Albero;
 
-// Creazione nodo e inserimento
-Albero crea_nodo(Auto auto);
+struct nodo{
+    Auto automobile;
+    Albero sx;
+    Albero dx;
+};
+
+// Creazione nodo
+Albero crea_nodo(Auto AUTO);
+
+// Inserimento
 void inserisci_auto(Albero *A, Albero nuovo);
 
-// Rimozione e deallocazione
+// Rimozione
 void rimuovi_auto(Albero *A, int km, const char* modello, const char* marca, const char* colore, const char* carburante, int anno, const char* cambio);
+void elimina_nodo(Albero *A);
+
+// Dealocazione
 void dealloca_albero(Albero *A);
 
 // Stampa
 void stampa_albero_inorder(Albero A);
 
-// Ricerca
+// Ricerche
 void cerca_Auto_marca(Albero A, const char* marca, int *trovate);
 void cerca_Auto_chilometri(Albero A, int km, int *trovate);
 void cerca_Auto_anno(Albero A, int anno_MIN, int anno_MAX, int *trovate);
