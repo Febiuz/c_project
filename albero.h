@@ -4,7 +4,6 @@
 #include "auto.h"
 
 typedef struct nodo* Albero;
-
 struct nodo{
     Auto automobile;
     Albero sx;
