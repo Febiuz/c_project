@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
+#include "auto.h"
+#include "albero.h"
 
 int main(){
 
