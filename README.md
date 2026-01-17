@@ -49,6 +49,8 @@ Aprire il terminale nella cartella contenente il file .c e digitare:
 Su Windows (PowerShell):
 
 gcc nome_file.c -o autosalone
+
+
 .\autosalone
 
 Utilizzo del programma, All’avvio viene mostrato un menu testuale:
